@@ -1,6 +1,6 @@
 def read_input():
     cases = []
-    c = int(input("Número de casos: ").strip())  #numero de casos
+    c = int(input("Número de casos (mayor que 0): ").strip())  #numero de casos
 
     for _ in range(c):
         n = int(input("\nNúmero de estados: ").strip())  #numero de estados
