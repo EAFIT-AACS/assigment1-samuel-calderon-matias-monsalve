@@ -1,10 +1,13 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/95BWY5mA)
 
 Names: Samuel Calderon Duque and Matias Monsalve Ruiz
+
 Class number: 7309
 
 Operating System: Windows 11 / MacOs Sequoia
+
 Programming Language: Python 3.13
+
 Tools: PyCharm 2024.3.3
 
 Have Python installed, open the IDE of your preference, open the file "dfa_minimization.py", after that run the file. Finally follow the required DFA details and check the output.
