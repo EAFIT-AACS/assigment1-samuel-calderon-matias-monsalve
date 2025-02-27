@@ -8,7 +8,7 @@ Operating System: Windows 11 / MacOs Sequoia
 
 Programming Language: Python 3.13
 
-Tools: PyCharm 2024.3.3 and we used the library time
+Tools: PyCharm 2024.3.3 and we used the time library
 
 Instructions: Have Python installed, open the IDE of your preference, open the file "dfa_minimization.py", after that run the file. Finally follow the required DFA details and check the output.
 
