@@ -1,18 +1,20 @@
+import time
+
+
 def read_input():
     cases = []
-    c = int(input("Número de casos (mayor que 0): ").strip())  #numero de casos
+    c = int(input().strip())  #numero de casos
     if c <= 0:
         print("El número de casos debe ser mayor que 0.")
     for _ in range(c):
-        n = int(input("\nNúmero de estados (mayor que 0): ").strip())  #numero de estados
+        n = int(input().strip())  #numero de estados
         if n <= 0:
             print("El número de estados debe ser mayor que 0.")
             break
-        alphabet = input("Alfabeto (separado por espacios): ").strip().split()  #alfabeto
+        alphabet = input().strip().split()  #alfabeto
         final_states = set(
-            map(int, input("Estados finales (separados por espacios): ").strip().split()))  #estados finales
-        print(f"Ingrese la tabla de transiciones ({n} filas):") #tabla de transiciones
-        transition_table = []
+            map(int, input().strip().split()))  #estados finales
+        transition_table = [] #tabla de transiciones
         for _ in range(n):
             row = list(map(int, input().strip().split()))
             transition_table.append(row[1:])  #ignora el primer numero de cada fila
@@ -47,10 +49,13 @@ def main():
     cases = read_input()
     for i, (n, alphabet, final_states, transition_table) in enumerate(cases, start=1):
         print(f"\nCaso #{i}:")
+        time.sleep(1)
         equivalent_states = minimize_dfa(n, alphabet, final_states, transition_table)
         if equivalent_states:
             print("Estados equivalentes:", " ".join(f"({p},{q})" for p, q in sorted(equivalent_states)))
+            time.sleep(1.5)
         else:
             print("Estados equivalentes: Ninguno")
+            time.sleep(1.5)
 if __name__ == "__main__":
     main()
