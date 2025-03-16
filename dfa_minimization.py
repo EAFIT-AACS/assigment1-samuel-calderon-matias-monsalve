@@ -58,4 +58,4 @@ def main():
             print("Estados equivalentes: Ninguno")
             time.sleep(1.5)
 if __name__ == "__main__":
-    main()
+    main()   
